@@ -1,22 +1,17 @@
-// data/adminData.ts
 import {
   LayoutDashboard,
-  SquareChartGantt,
-  UserPen,
-  Users,
   PersonStanding,
   PackageOpen,
-  UserRoundCog,
-  FileCog,
-  DatabaseBackup,
   GalleryVerticalEnd,
+  User2,
+  FileText,
+  Briefcase,
 } from "lucide-react";
 
 export const adminData = {
   user: {
     name: 'Admin User',
     email: 'admin@example.com',
-    // avatar: '/avatars/admin.jpg', // optional
   },
   teams: [
     {
@@ -28,48 +23,56 @@ export const adminData = {
   navMain: [
     {
       name: 'Dashboard',
-      url: '/app/dashboard',
+      url: '/admin/dashboard',
       icon: LayoutDashboard,
     },
     {
-      name: 'Manage Invoices',
-      url: '/app/invoices/manage',
-      icon: SquareChartGantt,
-    },
-    {
-      name: 'Authorize Invoices',
-      url: '/app/invoices/authorize',
-      icon: UserPen,
-    },
-    {
-      name: 'Clients',
-      url: '/app/clients',
-      icon: Users,
-    },
-    {
       name: 'Contractors',
-      url: '/app/contractors',
+      url: '/admin/contractors',
       icon: PersonStanding,
     },
     {
       name: 'Inventory',
-      url: '/app/inventory',
+      url: '/admin/inventory',
       icon: PackageOpen,
     },
+  ],
+};
+
+
+
+export const userData = {
+  user: {
+    name: 'John Doe',
+    email: 'john@student.college.edu',
+  },
+  teams: [
     {
-      name: 'User Management',
-      url: '/app/users/manage',
-      icon: UserRoundCog,
+      name: 'College Students',
+      logo: GalleryVerticalEnd,
+      plan: 'Free',
+    },
+  ],
+  navMain: [
+    {
+      name: 'Dashboard',
+      url: '/user/dashboard',
+      icon: LayoutDashboard,
     },
     {
-      name: 'File Manager',
-      url: '/app/files/manage',
-      icon: FileCog,
+      name: 'Profile',
+      url: '/user/profile',
+      icon: User2,
     },
     {
-      name: 'Backup Database',
-      url: '/app/backup',
-      icon: DatabaseBackup,
+      name: 'Applied Jobs',
+      url: '/user/jobs/applied',
+      icon: Briefcase,
+    },
+    {
+      name: 'Documents',
+      url: '/user/documents',
+      icon: FileText,
     },
   ],
 };
